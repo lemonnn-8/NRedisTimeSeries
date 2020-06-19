@@ -19,7 +19,7 @@ namespace NRedisTimeSeries.Example
         {
             ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost");
             IDatabase db = redis.GetDatabase();
-            TimeStamp timestamp = "*";
+            TimeStamp timestamp = '*';
             db.TimeSeriesAdd("my_ts", timestamp, 0.0);
             redis.Close();
         }
