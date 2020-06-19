@@ -19,7 +19,7 @@ namespace NRedisTimeSeries.Example
             string[] keys = { "system_time_ts", "datetime_ts", "long_ts" };
             var sequence = new List<(string, TimeStamp, double)>(keys.Length);
             // Add sample to the system_time_ts
-            sequence.Add((keys[0], "*", 0.0));
+            sequence.Add((keys[0], '*', 0.0));
             // Add sample to the datetime_ts
             sequence.Add((keys[1], DateTime.Now, 0.0));
             // Add sample to the long_ts
